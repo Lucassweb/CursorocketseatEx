@@ -1,5 +1,7 @@
-// Crie uma variáveis que tenha apenas os usuários que trabalham na Rocketseat e com mais de 18
-// anos: [{ nome: 'Diego', idade: 23, empresa: 'Rocketseat' }]
+
+// 2.3 Utilizando o find
+// Crie uma variável que procura por um usuário que trabalhe na empresa Google: undefined
+
 
 const usuarios = [
     { nome: 'Diego', idade: 23, empresa: 'Rocketseat' },
@@ -8,10 +10,5 @@ const usuarios = [
 
    ];
 
-   function urers(usuarios, idade){
-       return usuarios.idade > idade
-   }
-
-   const filterAge = usuarios.filter(usuarios => urers(usuarios, 18))
-
-   console.log((filterAge));
+   const Google = usuarios.find(usuarios => usuarios.empresa === "Google")
+   console.log(Google);
