@@ -1,4 +1,5 @@
-// Crie uma variável que contenha todas idades dos usuários: [23, 15, 30]
+// Crie uma variáveis que tenha apenas os usuários que trabalham na Rocketseat e com mais de 18
+// anos: [{ nome: 'Diego', idade: 23, empresa: 'Rocketseat' }]
 
 const usuarios = [
     { nome: 'Diego', idade: 23, empresa: 'Rocketseat' },
@@ -7,10 +8,10 @@ const usuarios = [
 
    ];
 
-   const idades = usuarios.map(item => {
-        return item.idade;
-   });
+   function urers(usuarios, idade){
+       return usuarios.idade > idade
+   }
 
-   console.log(idades);
-  
-   
+   const filterAge = usuarios.filter(usuarios => urers(usuarios, 18))
+
+   console.log((filterAge));
