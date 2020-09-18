@@ -1,24 +1,16 @@
-class Usuario {
-    constructor(email, senha) {
-        this.email = email;
-        this.senha = senha;
-    }
+// Crie uma variável que contenha todas idades dos usuários: [23, 15, 30]
 
-    isAdmin() {
-        return this.admin === true;
-    }
-}
+const usuarios = [
+    { nome: 'Diego', idade: 23, empresa: 'Rocketseat' },
+    { nome: 'Gabriel', idade: 15, empresa: 'Rocketseat' },
+    { nome: 'Lucas', idade: 30, empresa: 'Facebook' },
 
-class Admin extends Usuario {
-    constructor(email, senha) {
-        super(email, senha);
+   ];
 
-        this.admin = true;
-    }
-}
+   const idades = usuarios.map(item => {
+        return item.idade;
+   });
 
-const user = new Usuario('lucasXiba@hotmial.com', '123');
-const userAdmin = new Admin('lucas@hotmial.com', '123');
-
-console.log(user.isAdmin());
-console.log(userAdmin.isAdmin());
+   console.log(idades);
+  
+   
