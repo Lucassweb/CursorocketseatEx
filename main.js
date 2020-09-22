@@ -1,8 +1,9 @@
+// 3.2
+// Dica: Utilize uma constante pra function
 
-// Converta as funções nos seguintes trechos de código em Arrow Functions:
 
-const arr = [1, 2, 3, 4, 5];
+const usuario = { nome:'Diego', idade: 23 };
 
-const newArr = arr.map(item => item + 10);
+const mostraIdade = usuario => usuario.idade;
 
-console.log(newArr);
+mostraIdade(usuario);
