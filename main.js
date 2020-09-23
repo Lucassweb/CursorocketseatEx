@@ -1,9 +1,12 @@
-// 3.2
+// 3.3
 // Dica: Utilize uma constante pra function
 
+const nome = "Diego";
+const idade = 23;
 
-const usuario = { nome:'Diego', idade: 23 };
+const mostraUsuario = (nome = 'Diego', idade = 18) => ({ nome, idade });
 
-const mostraIdade = usuario => usuario.idade;
+mostraUsuario(nome, idade);
+mostraUsuario(nome);
 
-mostraIdade(usuario);
+
