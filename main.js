@@ -1,12 +1,11 @@
-// 3.3
-// Dica: Utilize uma constante pra function
+//3.4
 
-const nome = "Diego";
-const idade = 23;
+const promise = function(){
+    return new Promise(function(resolve, reject){
+        return resolve();
+    })
+}
 
-const mostraUsuario = (nome = 'Diego', idade = 18) => ({ nome, idade });
-
-mostraUsuario(nome, idade);
-mostraUsuario(nome);
+const promise = () => new Promise(resolve, reject => resolve());
 
 
